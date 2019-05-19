@@ -27,11 +27,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     // dagger2
-    implementation 'com.google.dagger:dagger:2.16'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+    implementation 'com.google.dagger:dagger:2.16' // Dagger2
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16' // 注解处理器
+
     // dagger.android
-    implementation 'com.google.dagger:dagger-android:2.16'
+    implementation 'com.google.dagger:dagger-android:2.16' // Dagger2 Android包
+    // 如果使用支持包， 上面的Android包可以省略，支持包里面已经包含了
+    // Dagger2 Android 支持包，用于支持v4、v7下的控件
     implementation 'com.google.dagger:dagger-android-support:2.16'
     // if you use the support libraries
-    annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'  // 注解处理器
 }
